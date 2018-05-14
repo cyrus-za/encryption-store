@@ -1,7 +1,7 @@
 # encryption-store
 
 ## Demo
-You can view the demo at https://alacrity-law-api-jqdyicjbwu.now.sh/ (see usage below)
+You can view the demo at https://alacrity-law-api.now.sh/ (see usage below)
 
 ## Dependencies
 Make sure you have Node running at v8 or higher
