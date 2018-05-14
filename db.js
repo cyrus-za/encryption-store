@@ -1,7 +1,7 @@
 const SimpleDb = require('simple-node-db');
 const options = {
     path: './data',
-    readAfterChange: true // read-back record after insert/update; else return model
+    readAfterChange: true
 };
 
 const db = new SimpleDb(options);

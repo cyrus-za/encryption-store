@@ -12,9 +12,7 @@ router.get('/', async (req, res, next) => {
     try {
         db.find(key, async (err, hash) => {
             if (err) return res.send(err);
-            console.log(hash);
             const data = await decrypt(hash, encryption_key);
-            console.log(data);
             res.json(data)
         })
     }
