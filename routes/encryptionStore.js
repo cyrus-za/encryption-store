@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const JsonDB = require('node-json-db');
 const {encrypt, decrypt} = require("../encryption");
 const {db} = require('../db');
 

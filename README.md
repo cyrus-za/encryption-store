@@ -7,3 +7,5 @@ Make sure you have Node running at v8 or higher
 
 Clone this then run
 ```npm install && npm start```
+
+Navigate to http://localhost:3000
