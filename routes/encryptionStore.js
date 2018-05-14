@@ -12,7 +12,11 @@ router.get('/', async (req, res, next) => {
     try {
         db.find(key, async (err, hash) => {
             if (err) return res.send(err);
-            const data = await decrypt(hash, encryption_key);
+            const data = await decrypt(hash, encryption_key).catch(err => {
+                console.log('err')
+                console.log(err)
+                if(err.includes('bad decrypt')) res.send([]);
+            });
             res.json(data)
         })
     }
