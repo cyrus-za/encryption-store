@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "now-build" : "mkdir data",
     "start": "node ./bin/www"
   },
   "dependencies": {
